@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Poppins:wght@200&family=Roboto+Slab:wght@300&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(700deg,yellow,lightgreen,blue,cyan,tomato);
+    position: relative;
+    overflow-x: hidden;
+    background-size:250%;
+    background-position:0%;
+    font-family: 'PT Serif';
+    
+  }
+  
+
+
+  
+  .bubbles {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 5px #fff inset, -2px -2px 5px #fff inset;
+    z-index: 0;
+  }
+  
+  .b1 {
+    top: 1vw;
+    left: 1vw;
+    height: 80px;
+    width: 80px;
+    animation: bubble_move1 15s infinite alternate;
+  }
+  
+  .b2 {
+    top: 20vh;
+    left: 20vw;
+    height: 120px;
+    width: 120px;
+    animation: bubble_move2 10s infinite alternate-reverse;
+  }
+  
+  .b3 {
+    top: 50vh;
+    left:840vw;
+    height: 100px;
+    width: 100px;
+    animation: bubble_move3 12s infinite alternate;
+  }
+  
+  .b4 {
+    top: 30vh;
+    left: 70vw;
+    height: 70px;
+    width: 70px;
+    animation: bubble_move4 20s infinite alternate-reverse;
+  }
+  
+  .b5 {
+    top: 70vh;
+    left: 10vw;
+    height: 60px;
+    width: 60px;
+    animation: bubble_move5 18s infinite alternate;
+  }
+  
+  @keyframes bubble_move1 {
+    100% {
+      top: 10vh;
+      left: 75vw;
+    }
+  }
+  
+  @keyframes bubble_move2 {
+    100% {
+      top: 60vh;
+      left: 10vw;
+    }
+  }
+  
+  @keyframes bubble_move3 {
+    100% {
+      top: 10vh;
+      left: 50vw;
+    }
+  }
+  
+  @keyframes bubble_move4 {
+    100% {
+      top: 80vh;
+      left: 30vw;
+    }
+  }
+  
+  @keyframes bubble_move5 {
+    100% {
+      top: 20vh;
+      left: 60vw;
+    }
+  }
+  .b6 {
+    top: 40vh;
+    left: 70vw;
+    height: 90px;
+    width: 90px;
+    animation: bubble_move6 18s infinite alternate-reverse;
+  }
+  
+  .b7 {
+    top: 10vh;
+    left: 5vw;
+    height: 70px;
+    width: 70px;
+    animation: bubble_move7 14s infinite alternate;
+  }
+  
+  .b8 {
+    top: 60vh;
+    left: 60vw;
+    height: 120px;
+    width: 120px;
+    animation: bubble_move8 10s infinite alternate-reverse;
+  }
+  
+  .b9 {
+    top: 80vh;
+    left: 20vw;
+    height: 50px;
+    width: 50px;
+    animation: bubble_move9 16s infinite alternate;
+  }
+  
+  /* Existing keyframes... */
+  @keyframes bubble_move6 {
+    100% {
+      top: 20vh;
+      left: 60vw;
+    }
+  }
+  
+  @keyframes bubble_move7 {
+    100% {
+      top: 70vh;
+      left: 5vw;
+    }
+  }
+  
+  @keyframes bubble_move8 {
+    100% {
+      top: 30vh;
+      left: 50vw;
+    }
+  }
+  
+  @keyframes bubble_move9 {
+    100% {
+      top: 70vh;
+      left: 90vw;
+    }
+  }
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  
+  
+  .success-animation {
+    /* Add your success animation styling here */
+  }
+  
+  
+  .sections-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Gap between sections */
+    margin-top: 50px;
+  }
+  @media (max-width: 768px) {
+    .sections-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px; /* Gap between sections */
+      margin-top: 110px;
+    }
+  }
+  .payment-section {
+    background-color: #00FF00;
+   
+    padding: 20px;
+    border-radius: 10px;
+    text-align:center;
+  }
+  
+  .ebook-section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1; /* Fill remaining space */
+  }
+  
+  .ebook-cover {
+    max-width: 100%; /* Ensure the image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    border-top:2px double #29cb15;
+    border-left:2px solid #29cb15;
+    filter:hue-rotate(25deg);
+    border-radius:7px;
+  }
+  
+  .download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4682B4;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 20px 0;
+    border-left:2px solid #fff;
+    border-right:2px solid #ececec;
+  }
+      .form-container {
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+       min-width: 70vw;
+      }
+  
+      .input-field {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #ccc;
+      }
+  
+      .pay-button {
+        padding: 10px 20px;
+        background-color: #4682B4;
+        color: #FFFFFF;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+     
